@@ -1,0 +1,197 @@
+:root{
+    --main-text-color: #2E2F42;
+    --text-color: #434455;
+    --secondary-text-color: #E7E9FC;
+    --main-title-color: #FFFFFF;
+    
+    --button-color: #4D5AE5;
+    --secondary-button-color: #F4F4FD;
+    --button-text-color: #FFFFFF;
+    --button-border-color: #E7E9FC;
+
+    --accent-color: #4D5AE5;
+
+    --hover-text-color: #404BBF;
+    --hover-element-color: #404BBF;
+
+    --accent-socials-color: #31D0AA;
+
+    --main-bg-color: #2E2F42;
+    --light-bg-color: #F4F4FD;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.list{
+    list-style: none;
+
+}
+
+
+/* -----------------------Header------------------------- */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    color: var(--main-text-color);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.logo > span{
+    color:var(--accent-color);
+}
+
+.nav-link {
+    color: var(--main-text-color);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.address-link {
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-link:is(:hover, :focus),
+.address-link:is(:hover, :focus),
+.nav-link.current {
+    color: var(--hover-text-color);
+}
+
+/* -----------------------Hero------------------------- */
+
+.hero {
+    background-color: var(--main-bg-color);
+}
+
+.hero-title {
+    color: var(--main-title-color);
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.hero-btn {
+    font-family: 'Roboto', sans-serif;
+    color:var(--button-text-color);
+    background-color: var(--button-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--hover-element-color);
+}
+
+
+/* -----------------------Advantages------------------------- */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+ }
+
+.subtitle {
+    color: var(--main-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+ }
+/* -----------------------Doing------------------------- */
+
+.section-title {
+    color: var(--main-text-color);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.section-text{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* -----------------------Our Team------------------------- */
+
+.team {
+    background-color: var(--light-bg-color);
+}
+
+/* -----------------------Footer------------------------- */
+
+.footer{
+    background-color: var(--main-bg-color);
+}
+
+.footer .section-text {
+    color: var(--secondary-text-color);
+}
+
+.footer .logo{
+    color: var(--main-title-color);
+}
+
+/* --------------------------------------------------------- */
+/* -----------------------Portfolio------------------------- */
+
+
+.portfolio-btn{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary-button-color);
+    color: var(--button-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    border: 1px solid var(--button-border-color);
+    cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background-color: var(--hover-element-color);
+    color: var(--button-text-color);
+}
+
+.card-descr{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.card-text {
+    color: var(--secondary-button-color);
+    background-color: var(--accent-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
